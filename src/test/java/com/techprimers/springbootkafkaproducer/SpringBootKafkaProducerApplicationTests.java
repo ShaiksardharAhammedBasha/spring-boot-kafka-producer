@@ -1,6 +1,5 @@
 package com.techprimers.springbootkafkaproducer;
 
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -11,7 +10,7 @@ class SpringBootKafkaProducerApplicationTests {
 
 	@Test
 	public void method() {
-		Assert.assertTrue("OMG test!", true);
+		assert true;
 	}
 
 }
