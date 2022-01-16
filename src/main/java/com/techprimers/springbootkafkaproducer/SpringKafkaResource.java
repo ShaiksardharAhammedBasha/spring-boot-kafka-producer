@@ -22,18 +22,10 @@ public class SpringKafkaResource {
                                               @PathVariable("message") String message,
                                               @PathVariable("city") String city) {
         kafkaTemplate.send(TOPIC, new Student(id, message, city));
-        System.out.println("Id is:"+id+" Message is:"+message+" && City is:"+city);
+        System.out.println("Id is:"+id+" Message is:"+message);
         System.out.println(TOPIC.toLowerCase());
         System.out.println(TOPIC.startsWith("s"));
         return "Message Published Successfully to kafka server:";
     }
 
-    @GetMapping(value="/student/{id}/{message}/{city}")
-    public String publishMessageToSecondKafkaServer(@PathVariable("id") String id,
-                                              @PathVariable("message") String message,
-                                              @PathVariable("city") String city) {
-        kafkaTemplate.send(TOPIC2, new Student(id, message, city));
-        System.out.println("Id is:"+id+" Message is:"+message+" && City is:"+city);
-        return "Message Published Successfully to Second kafka server:";
-    }
 }
