@@ -10,7 +10,7 @@ class SpringBootKafkaProducerApplicationTests {
 
 	@Test
 	public void method() {
-		assert true;
+		assertEquals;
 	}
 
 }
