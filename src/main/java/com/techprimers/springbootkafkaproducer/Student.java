@@ -8,7 +8,8 @@ public class Student {
     private String city;
     private String OrderDoneSuccess;
     private String Confirmed;
-    private String status;
+    private boolean statusChanged;
+    private String online;
 
     public Student() {
         super();
