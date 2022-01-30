@@ -6,8 +6,9 @@ public class Student {
     private String id;
     private String message;
     private String city;
-    private String Order;
-    private String Status;
+    private String OrderDoneSuccess;
+    private String Confirmed;
+    private String status;
 
     public Student() {
         super();
