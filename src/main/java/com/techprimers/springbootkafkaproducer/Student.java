@@ -9,7 +9,7 @@ public class Student {
     private String OrderDoneSuccess;
     private String Confirmed;
     private boolean statusChanged;
-    private String online;
+    private boolean paymentDone;
 
     public Student() {
         super();
