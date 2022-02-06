@@ -18,12 +18,14 @@ class SpringBootKafkaProducerApplicationTests {
 	}
 
 	@Test
-	public void testTwoForCheck() {
-		assertEquals("", "");
+	public void testReplacingMasterBranchTestInTestCaseBranch() {
+		assertFalse(false);
 	}
 
 	@Test
 	public void fourthTestCaseInDemoBranch() {
 		assertFalse(false);
 	}
+
+
 }
