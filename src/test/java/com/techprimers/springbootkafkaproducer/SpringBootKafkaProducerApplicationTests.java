@@ -17,4 +17,9 @@ class SpringBootKafkaProducerApplicationTests {
 		assertEquals(a, b);
 	}
 
+	@Test
+	public void thirdTestCaseInsideMasterBranch() {
+		assertEquals("", "");
+	}
+
 }
