@@ -15,4 +15,9 @@ class SpringBootKafkaProducerApplicationTests {
 	public void testAAndBEqualsCheckInDemoBranch() {
 		assertEquals(a, b);
 	}
+
+	@Test
+	public void testTwoForCheck() {
+		assertEquals("", "");
+	}
 }
