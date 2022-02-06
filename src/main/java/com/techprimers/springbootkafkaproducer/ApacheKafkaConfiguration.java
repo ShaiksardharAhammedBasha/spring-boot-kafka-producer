@@ -12,7 +12,7 @@ import org.springframework.kafka.support.serializer.JsonSerializer;
 import java.util.HashMap;
 import java.util.Map;
 
-// This is Configuration Fileg
+// This is Configuration File And Updated in Demo Branch
 
 @Configuration
 public class ApacheKafkaConfiguration {
@@ -24,6 +24,7 @@ public class ApacheKafkaConfiguration {
         // HashMap Implementation
         Map<String, Object> config = new HashMap<>();
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
+        System.out.println(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG);
         config.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
 
